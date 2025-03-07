@@ -13,7 +13,7 @@ body{
     color: black;
 }
 
-.card{
+.example{
     margin: 20px auto; 
     cursor: pointer;
     height: 500px;
@@ -30,22 +30,44 @@ body{
     background-color: rgb(238, 238, 238);
 }
 
+.invisible{
+    display: none;
+}
+
 @media(max-width:1407px){
-    .card{
+    .example{
         height: 480px;
     }
+    
 }
 
 @media(max-width:1215px){
-    .card{
+    .example{
         height: 450px;
+    }
+    
+    
+}
+
+@media(max-width: 990px){
+    .invisible{
+        display: block;
     }
 }
 
 @media(max-width:767px){
-    .card{
+    .example{
         height: 560px;
     }
+
+    .service{
+        margin: 10px auto;
+    }
+
+    .invisible{
+        display: none;
+    }
+    
 }
 
 .nav-link{
@@ -58,7 +80,7 @@ body{
     color: rgb(4, 0, 255);
 }
 
-#projects, #prices, #contact{
+#projects, #prices, #contact, #aboutMe{
     font-size: 2.5em;
     margin: 10px 0;
 }
@@ -77,7 +99,36 @@ footer{
     color: rgb(171, 170, 184);
 }
 
-time{
-    
-
+.service{
+    height: auto;
+    text-align: center;
 }
+
+#serviceInfo1, #serviceInfo2, #serviceInfo3, #serviceInfo4{
+    text-align: left;
+    display: none;
+}
+
+#instagram{
+    color: black;
+}
+
+#gmail, #instagram{
+    display: inline-block;
+    width: 18px;
+}
+
+#mail, #ig{
+    display: inline;
+}
+
+#photoOfMe{
+    border-radius: 500px;
+    width: 400px;
+    height: 400px;
+}
+
+.aboutMeContainer{
+    height: 480px;
+}
+
